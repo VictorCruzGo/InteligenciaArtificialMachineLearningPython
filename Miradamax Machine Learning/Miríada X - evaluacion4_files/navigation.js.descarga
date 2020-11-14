@@ -1,0 +1,504 @@
+$(document).ready(function(){	
+	$(".nav-general li.submenudearriba .desplegable").hide();
+	$("#navigation li.submenudeabajo .desplegable2").hide();
+	$(".nav-control a.menu").click(function(){
+		$(".nav-main").toggle();
+		var menuEstado = $(".nav-control").hasClass('menu-close');
+		if(menuEstado == 1){
+			$(".nav-control").removeClass("menu-close");
+			$(".nav-control").addClass("menu-open");
+		}else{
+			$(".nav-control").removeClass("menu-open");
+			$(".nav-control").addClass("menu-close");
+		}
+	});
+	$(".nav-general li.submenudearriba").click(function(){
+		$(this).children(".desplegable").toggle();
+		var submenuEstado = $(this).hasClass("submenu-close");
+		if(submenuEstado == 1){
+			$(this).removeClass("submenu-close");
+			$(this).addClass("submenu-open");
+		}else{
+			$(this).removeClass("submenu-open");
+			$(this).addClass("submenu-close");
+		}
+	});
+	$("#navigation li.submenudeabajo").click(function(){
+		$(this).children(".desplegable2").toggle();
+		var submenuEstado = $(this).hasClass("submenu-close");
+		if(submenuEstado == 1){
+			$(this).removeClass("submenu-close");
+			$(this).addClass("submenu-open");
+		}else{
+			$(this).removeClass("submenu-open");
+			$(this).addClass("submenu-close");
+		}
+	});
+	/*if($('.mycoursesv2-portlet').length > 0 && $( ".cabecera" ).length > 0){
+		$( ".cabecera" ).insertBefore( $( ".nav-breadcrumb" ) );
+	}*/
+	
+	$('.mycoursesv2-portlet #supCertificate, .mycoursesv2-portlet #partCertificate, .mycoursesv2-portlet #compartirRRSS')
+		.on('click',function(){
+			$(this).toggleClass('open');
+			$(this).siblings('div').toggleClass('open');
+		});
+	
+	$('.vista_previa_certificado').on('click',function(){
+		if($(this).find('.image_preview').hasClass("ope") == false){
+			$(this).find('.image_preview').addClass("ope");
+			$(this).find('img').clone().appendTo( ".image_preview" );
+			$(this).parents('.bsuper').css('z-index','999999');
+			$('<span class="background"></span>').appendTo( ".image_preview" );
+			$('<span class="close">X</span>').appendTo( ".image_preview" );
+		}else{		
+			$('.vista_previa_certificado').find('.image_preview').removeClass("ope");
+			$('.vista_previa_certificado').find('.image_preview').html("");
+		}
+	});
+	
+	
+	
+	
+	//Ficha curso
+	$(window).scroll(function() {
+		
+		if($('.ficha_curso').length > 0){
+			if($(window).innerWidth() > 768){
+				if($('body').scrollTop() >= 325){
+					$( ".flotante .specialwrapper" ).addClass('fixed');
+				}
+				else{
+					$( ".flotante .specialwrapper" ).removeClass('fixed');
+				}	
+			}
+			if($(window).innerWidth() <=768 && $(window).innerWidth() > 480){
+				if($('body').scrollTop() >= 40){
+					$( ".flotante .specialwrapper" ).addClass('fixed');
+				}
+				else{
+					$( ".flotante .specialwrapper" ).removeClass('fixed');
+				}
+			}
+			if($(window).innerWidth() <=480){
+				$('#column-1').append($('.flotante '));	
+			
+			}
+		}
+	});
+
+	if( $('.cabecera').length > 0){
+		$('.cabecera').find('input:checked').parent().parent().find('label').css('font-weight','bold');
+	}
+	if($('.ficha_cursos_scheme').length > 0){
+		//$('.rrss_course_container #redes').append( '<span>Comparte este curso</span>' );
+		$('.teachers .teacher a').attr('target','_blank');
+		/*if($('.mensaje_marcado').length > 0){
+			$('.boton_inscibirse ').css('display','none');
+		}*/
+		$('#navigation_table_column2').append( '<div class="menuNew"></div>' );
+		if($(window).innerWidth() <=480){
+			$('#column-1').append($('.flotante '));	
+		
+		}
+		setTimeout(function(){ 
+			
+			var ln = $('html').attr('lang');
+			var varGratis = "ABIERTO";
+			var varPremiun = "PRO";
+			var varItine = "ITINERARIO";
+			//var varItineporcent = "<strong>30% DE DESCUENTO</strong> EN 5 CURSOS";
+			var varItineporcent = $('#Perteneceitinerario').text();
+			
+			
+			var content = "";
+			if(ln == 'en-EN'){
+				varGratis = "OPEN";
+				varPremiun = "PRO";
+				varItine = "ITINERARY";
+			}else if(ln == 'pt-BR'){
+				varGratis = "ABERTO";
+				varPremiun = "PRO";
+				varItine = "ITINERÁRIO";
+			}			
+			
+			if($('#isPremium').text() == "false"){
+				content = '<span class="typecourse green">' + varGratis + '</span>';			
+			}else if($('#Isitinerario').text() == "true"){
+				$('#column-8').parents('.layout-2').remove();
+				content = '<span class="typecourse orange">' + varItine + '</span>';
+			}else{
+				content = '<span class="typecourse blue">' + varPremiun +'</span>';
+			}
+			if( varItineporcent.length > 0){
+				content += '<span class="textIti">'+ varItineporcent +'</span>';
+			}
+			$('#navigation_table_column1').append(content);
+		}, 300);
+		
+		$('#menudeabajo').appendTo($('#navigation_table_column2 .menuNew'));
+		var urlCurso = $('#menudeabajo li:first-child a').attr('href');
+		$('#navigation_table_column1 div a').attr('href', urlCurso);
+		if($('.menuNew #menudeabajo>li').length > 6){
+			$('#menudeabajo').addClass('desplegable');
+		}else{
+			$('#menudeabajo').removeClass('desplegable');
+		}
+		if( !$('#menudeabajo').hasClass('desplegable') ){
+			$('#menudeabajo li:first-child').remove();
+		}	
+		
+		if($('.selectPrecio').length > 0){
+			$('.selectPrecio').parents('.badge-pay-portlet').addClass('reducido');
+			$('.final-course-badge-portlet').addClass('reducido');			
+		} 
+		
+		
+		$('.coursedescription-portlet').find('.portlet-content').slideToggle();
+		$('.portlet-fichaTitulo').slideToggle();
+		$('.courseteachers-portlet').slideToggle();
+		$('.coursedescription-portlet').toggleClass('close');
+			
+		$('.coursedescription-portlet').on('click',function(){
+			$(this).find('.portlet-content').slideToggle();
+			$('.portlet-fichaTitulo').slideToggle();
+			$('.courseteachers-portlet').slideToggle();
+			$(this).toggleClass('close');
+		});
+		
+		$("#linktodescription span").click(function(){			
+			var top = $('.coursedescription-portlet').offset().top;
+			$(window).scrollTop(top);
+		});
+		$("#linktobadges span").click(function(){
+			var top = $('.badges_Certificados').offset().top;
+			$(window).scrollTop(top);
+		});
+		$("#linktomodules span").click(function(){
+			var top = $('.modulelist-portlet').offset().top;
+			$(window).scrollTop(top);
+		});
+		
+		/* Javascript que recoge el objeto del portlet para saber cual es Premium y cual Free*/
+		// modulePremium[id,false]
+		
+		$('.ficha_cursos_scheme .modulelist-portlet .coursemodule tr').each(function(){
+			var array = $(this).attr('id').split('_');
+			var actual =$(this);
+			$.each( modulePremium, function( key, value ) {
+			  if(array[array.length-1] == key && value == 'true'){
+				  actual.addClass('modulePremium');
+			  }
+			});
+		});
+		if( $('.coursemodule tr.modulePremium').length > 0){
+			if( $('.coursemodule tr.modulePremium .access').find('a').length <= 0){
+				$('.coursemodule tr.modulePremium .access').css('display','none');
+			}
+		}
+		
+	}
+	
+	/*if($('.portlet-search').length > 0){
+		$('body').addClass('searchM');*/
+		if($('body.searchM').length > 0){
+			var array = $('.portlet-search .aui-button input').attr('src').split('.png');
+			var cadena = array[0] + "_.png";
+			 $('.portlet-search .aui-button input').attr('src',cadena);
+		}
+	//}
+	
+	$('.signed-in .liferay-rating-score').hide();
+	$('.signed-in .courseratings-portlet .aui-rating-element').on('click',function(){
+		$('.signed-in .liferay-rating-vote').hide();
+		$('.signed-in .liferay-rating-score.aui-rating-disabled').show();
+	});
+	
+	//funcion que se encarga del menu
+	function cargarDesplegable(){
+		if($(window).width() > 683){
+			mostrarForos();
+		}
+		else{
+			ocultarForos();
+		}
+		if($(window).width() > 768){
+			$(".generalnav-portlet #menudearriba").addClass("desktop");
+			$(".desktop li.submenudearriba").hover(function(){
+				$(this).find(".desplegable").show();
+		        }, function(){
+		        	$(this).find(".desplegable").hide();
+		    });
+			
+			$(".menunavegacion-portlet li").hover(function(){
+				$(this).parent().find(".desplegable").show();
+				if($(this).context.className ==	"user-avatar"){
+					$(".menunavegacion-portlet .submenudearriba").addClass("open");
+				}
+				else{
+					$(".menunavegacion-portlet .submenudearriba").removeClass("open");
+				}
+		        }, function(){
+		        	$(this).parent().find(".desplegable").hide();
+		        	$(".menunavegacion-portlet .submenudearriba").removeClass("open");
+		    });
+		}
+		else{
+			$("#menudearriba").removeClass("desktop");
+			$("li.submenudearriba").off('hover');
+		}
+	}
+		
+	$(window).resize(function(){
+		cargarDesplegable();
+	});	
+	
+	
+	$(".titularPaginaHeader #menudeabajo")
+	$(".ficha_curso").parents('#wrapper').find('#menudeabajo li').css("display","none");
+	$(".titularPaginaHeader #menudeabajo")
+	$('#menudeabajo.desplegable').click(function(){
+		$(this).toggleClass("heightAuto");
+		if($(this).hasClass("heightAuto")){
+			$(this).find("li").css("display","block");
+		}
+		else{
+			$(this).find("li").css("display","none");
+		}
+		
+	});
+	
+	function cortarTextos(elemento, cantidad){
+		var texto = "";
+		texto = $(elemento).text();
+		if(texto.length > cantidad){
+			var sobras = $(elemento).text().substr(cantidad);
+			if(sobras.length != 1 && sobras.length != 2){
+				texto = texto.replace(sobras,"...");
+				$(elemento).text(texto);
+			}
+		}
+	}
+	$(".nextcourses-portlet .curs-title .name a").each(function(){
+	  cortarTextos($(this),65);
+	 });
+	 
+	 $(".coursetop .curs-title .name a").each(function(){
+	  cortarTextos($(this),65); 
+	 });
+	
+	
+	$(".login .journal-content-article li .botonLogin").append('<div class="flecha"></div>');
+	
+	
+	function cargarBannerHome (){
+		if($("#portlet_terms-of-use").length == 1 ) {
+			$(".home #banner").css(
+					{"background":"none",
+					 "height":"auto"
+					});
+			$(".home #video_background").css("display","none");
+			$(".home .nav-general.nav-main").css({"position": "relative",
+												  "min-height": "auto"});
+		}
+		else{
+			$(".home #banner").css(
+					{
+						"background": "url(/miriadax-theme/images/custom/color_schemes/home/banner/ImagenHome_Aclarada.jpg) no-repeat",
+						"background-size": "cover",
+						"height":"640px"
+					});
+			$(".home .nav-general.nav-main").css({"position": "absolute",
+				  "min-height": "360px"});
+			$(".home #video_background").css("display","block");
+		}
+	}
+	
+	cargarDesplegable();
+	cargarBannerHome();
+	
+	function ocultarForos (){
+		$(".titularPaginaHeader #menudeabajo li a").each(function(){
+			if($(this).text()==" Foro" || $(this).text()==" F�rum")
+			{
+				$(this).parent().removeClass("selected");
+				$(this).parent().addClass("hide");
+			}
+		});
+	}
+	
+	function mostrarForos (){
+		$(".titularPaginaHeader #menudeabajo li a").each(function(){
+			if($(this).text()==" Foro" || $(this).text()==" F�rum")
+			{
+				$(this).parent().removeClass("hide");
+				if($(".pantalla_foro").length == 1){
+					$(this).parent().addClass("selected");
+				}
+			}
+			
+		});
+	}
+	
+	function comprobarConversacionForo(){
+		
+			var cadena = $(".P2PAnonima .lfr-panel-title span").text().split(" ");
+			
+			if(cadena[0] != ""){
+				$(".P2PAnonima .lfr-panel-title span").text(cadena[0]);
+			}
+			else{
+				$(".P2PAnonima .lfr-panel-title span").text(cadena[1]);
+			}
+			
+	}
+	
+	/* Funcion para dejar marcado el servicio que se clicka en socialMail */
+	 $('.container-service').click(function(){
+	  var obj = $(this);
+	
+	  $('.container-service').each(function(){
+	   var obj2 = $(this);
+	
+	   obj2.children('a').removeClass('service-selected');
+	  });
+	
+	  obj.children('a').addClass('service-selected');
+	  
+	  setTimeout(function(){
+		  $(".list-group-item span").each(function(){
+			  cortarTextos($(this),22); 
+		  
+		 });
+	  },2000);
+		  if($('.step').hasClass("selected")){
+			  $('.step').removeClass("selected");
+			  $('.step').nextAll('.step').first().addClass("selected");
+		  }
+	 });
+	 
+	 $("#button-contact").click(function(){
+		 if($('.step').hasClass("selected")){
+			  $('.step').removeClass("selected");
+			  $('.step').nextAll('.step').last().addClass("selected");
+		  }
+	 });
+	 if($(".portlet-msg-success").load().length !=0){
+		 $('.socialMail .step').removeClass("selected");
+		 $('.socialMail .step').nextAll('.step').last().addClass("selected");
+	 }else{
+		 $('.socialMail .step').removeClass("selected");
+		 $('.socialMail .step').first().addClass("selected");
+		 
+	 }
+	 
+		/*funcion para el slider de cursos recomendados*/
+		$('.cursos_recomendados').find(".taglib-header").remove();
+		$('.cursos_recomendados').find("h4").remove();
+		$('.cursos_recomendados').find(".separator").remove();
+	 	$('.cursos_recomendados').find(".final-separator").remove();
+	 	var htmlSlider=$('.cursos_recomendados .portlet-content-container .portlet-body').html();
+	 	$('.cursos_recomendados .portlet-content-container .portlet-body').append("<div class='bxslider'>");
+	 	$('.cursos_recomendados .bxslider').html(htmlSlider);
+	 	$('.cursos_recomendados .bxslider').find("form").remove();
+	 	$('.cursos_recomendados .bxslider').bxSlider({
+	         slideWidth: 1144,
+	         minSlides: 1,
+	         maxSlides: 1,
+	         moveSlides: 1
+	    });
+	 	$('.cursos_recomendados .bx-wrapper').siblings(".asset-full-content.no-title").remove();
+	 	
+	 	
+	 	/*funcion para quitar los badges de los cursos cerrados*/
+	 	$(".courseexpandovalue-portlet").each(function(){
+	 		var texto = $(this).find(".portlet-body").last().text();
+	 		if(texto.indexOf("Curso cerrado") == -1){
+		 		$(".ShowBadgeCourse-portlet").css("display","block");
+		 	}
+		 	else{
+		 		$(".ShowBadgeCourse-portlet").css("display","none");
+		 		return false;
+		 	}
+	 	});
+	 	
+	 	/*funcion para abrir popup*/
+	 	$("a[rel='pop-up']").click(function () {
+	      	var caracteristicas = "height=700,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
+	      	nueva=window.open(this.href, 'Popup', caracteristicas);
+	      	return false;
+	 	});
+	 	
+	 	/*funcion para los eventos pasados*/
+	 	function dinamicClassPastEvents(){
+			var countitems=0; 
+			$('.item-list').each(function(){
+				var obj = $(this);
+				countitems++; 
+				if(countitems%2 == 0){
+					obj.addClass('par-row');
+				}else{
+					obj.addClass('inpar-row');
+				}
+			});
+		}
+	 	
+	 	dinamicClassPastEvents();
+	 	 
+	 	/*google analytics cursos recomendados*/
+		 $('.redes_sociales a').on('click', function() {
+			 if (typeof _gaq !== 'undefined') {
+				 _gaq.push(['_trackEvent', 'Click redes sociales curso recomendado']);
+			 }
+		 });
+		 
+		 
+		 
+		 
+		 $('.ranking-suggestions-box').bxSlider({
+	         slideWidth: 1144,
+	         minSlides: 1,
+	         maxSlides: 1,
+	         moveSlides: 1
+	    });
+		 
+		 
+		/****************************************/ 
+		/*funcionalidad para la pasarela de pago*/
+		/****************************************/ 		 
+		$(".selectPago").click(function(){
+			$(".selectPago").removeClass("selected");
+			$(this).addClass("selected");
+		});
+		
+		/****************************************/ 
+		/*fin funcionalidad para pasarela d pago*/
+		/****************************************/ 
+		
+		/* fin funcion rankings */
+		
+		/* funcionalidad p2p anonimas */		
+		comprobarConversacionForo();
+		
+		
+		/* Funcionalidad para la pantalla de MYCOURSES2 */
+		/*----------------------------------------------*/
+		$('.bar-percentage[data-percentage]').each(function () {
+		  var progress = $(this);
+		  var percentage = Math.ceil($(this).attr('data-percentage'));
+		  $({countNum: 0}).animate({countNum: percentage}, {
+		    duration: 2000,
+		    easing:'linear',
+		    step: function() {
+		      // What todo on every count
+		     var pct = '';
+		     if(percentage == 0){
+		       pct = Math.floor(this.countNum) + '%';
+		     }else{
+		       pct = Math.floor(this.countNum+1) + '%';
+		     }
+		    progress.text(pct) && progress.siblings().children().css('width',pct);
+		    }
+		  });
+		});
+});

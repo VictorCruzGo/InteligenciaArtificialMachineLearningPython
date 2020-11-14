@@ -1,0 +1,8640 @@
+<!DOCTYPE html>
+<!-- saved from url=(0387)https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&p_p_auth=4GOVBtb2&p_p_id=execactivity_WAR_liferaylmsportlet&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_o_p_id=activityViewer_WAR_liferaylmsportlet&p_r_p_564233524_actId=129224&_execactivity_WAR_liferaylmsportlet_latId=50702962&_execactivity_WAR_liferaylmsportlet_javax.portlet.action=correct -->
+<html class="ltr yui3-js-enabled webkit ltr js chrome chrome61 chrome61-0 win secure" dir="ltr" lang="es-ES"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Miríada X - </title>
+	
+
+	<meta name="google-site-verification" content="Ok6YPdeH9m-TGfYLdlJLutzYlX3nlEJiB75Y1dx1a90">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<meta property="og:title" content="Introducción al Machine Learning (2.ª edición)">
+	<meta property="og:description" content="¿Te gustaría conocer cómo las máquinas pueden aprender de nuestros datos? ¡Estás en el lugar adecuado para ello! Desde Fundación Telefónica, te presentamos un curso diseñado como una introducción al Aprendizaje Automático (Machine Learning) con un enfoque práctico. Primero analizaremos qué tipos de datos son útiles y cómo han de estar formateados para usarlos en el Aprendizaje Automático. Aprenderemos qué es la ingeniería de datos, aplicaremos algunos de los modelos de Machine Learning existentes a diversos ejemplos de datos y analizaremos la información que estos nos proporcionan. Vivimos en un mundo digital y en constante cambio. Las empresas necesitan de profesionales que se hayan adaptado al cambio tecnológico, personas ágiles e inquietas como tú que quieran ponerse al día en el avance de la programación, un poder que te facilitará el acceso al mundo laboral de las empresas más punteras y con más futuro de este país. ¡Lo tienes muy fácil! Inscríbete en el curso “Machine Learning” para conseguir el objetivo. Necesitamos a futuros profesionales de mente abierta como tú… ¡y no es difícil ponerse al día! Para ello y para obtener más información pincha aquí.">
+	<meta property="og:image" content="https://miriadax.net/documents/79572657/80255427/Curso_IntroMachineLearning_2_360x175.jpg/154eff24-1735-45e3-8ca1-8d2b7526ba11?version=1.0&amp;t=1484052488000">
+	<meta property="og:image:width" content="360">
+	<meta property="og:image:height" content="175">
+	<meta property="og:url" content="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-">
+	<meta property="og:site_name" content="Miríada X">
+	<meta property="og:locale" content="es_ES">
+	<meta property="og:type" content="website">
+			<meta http-equiv="X-UA-Compatible" content="IE=10"><!-- IE10 mode -->
+	
+	
+	
+	
+	
+	<link rel="stylesheet" href="./Miríada X - evaluacion4_files/css">
+	<link rel="stylesheet" href="./Miríada X - evaluacion4_files/css(1)" type="text/css">
+	<!-- <link rel="stylesheet" href="https://static3.miriadax.net/miriadax-theme/css/custom/bootstrap.min.css" /> -->
+	<link rel="stylesheet" href="./Miríada X - evaluacion4_files/jquery.bxslider.css">
+	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/dgmlfihfkkcofmdhnhijpmcmfnkfpjia">
+	
+	<!--[if lte IE 6]>
+	<link href="https://static2.miriadax.net/miriadax-theme/css/custom/shared/ie6.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+	<!--[if IE 7]>
+	<link href="https://static2.miriadax.net/miriadax-theme/css/custom/shared/ie7.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+	<!--[if IE 8]>
+	<link href="https://static2.miriadax.net/miriadax-theme/css/custom/shared/ie8.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+	<!--[if IE 9]>
+	<link href="https://static2.miriadax.net/miriadax-theme/css/custom/shared/ie9.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+	
+	
+	
+	
+	<script async="" src="./Miríada X - evaluacion4_files/gtm.js.descarga"></script><script type="text/javascript" async="" src="./Miríada X - evaluacion4_files/ga.js.descarga"></script><script src="./Miríada X - evaluacion4_files/2829.js.descarga" async="" type="text/javascript"></script><script src="./Miríada X - evaluacion4_files/jquery-1.7.2.min.js.descarga"></script>
+	<script src="./Miríada X - evaluacion4_files/jquery-ui-1.8.21.min.js.descarga"></script>
+	<script src="./Miríada X - evaluacion4_files/jquery.bxslider.min.js.descarga" charset="utf-8"></script>
+	<script src="./Miríada X - evaluacion4_files/jquery.simplemodal.js.descarga" charset="utf-8"></script>
+	<script src="./Miríada X - evaluacion4_files/jssor.slider.mini.js.descarga" charset="utf-8"></script>
+	<script src="./Miríada X - evaluacion4_files/popups.js.descarga" charset="utf-8"></script>
+	<script src="./Miríada X - evaluacion4_files/navigation.js.descarga" charset="UTF-8"></script>
+	<script src="./Miríada X - evaluacion4_files/rrss_gaq.js.descarga" charset="UTF-8"></script>
+
+	
+	<script src="./Miríada X - evaluacion4_files/crazyegg.js.descarga"></script>
+			<script src="./Miríada X - evaluacion4_files/MathJax.js.descarga" id=""></script>
+		<script type="text/x-mathjax-config;executed=true" src="./Miríada X - evaluacion4_files/MathJax.js(1).descarga"></script>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+<link href="https://miriadax.net/miriadax-theme/images/favicon.ico" rel="Shortcut Icon">
+
+
+
+
+
+
+
+<link href="./Miríada X - evaluacion4_files/main.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+	
+
+				<link href="./Miríada X - evaluacion4_files/main(1).css" rel="stylesheet" type="text/css">
+
+	
+
+
+
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+		var Liferay = {
+			Browser: {
+				acceptsGzip: function() {
+					return true;
+				},
+				getMajorVersion: function() {
+					return 61.0;
+				},
+				getRevision: function() {
+					return "537.36";
+				},
+				getVersion: function() {
+					return "61.0.3163.100";
+				},
+				isAir: function() {
+					return false;
+				},
+				isChrome: function() {
+					return true;
+				},
+				isFirefox: function() {
+					return false;
+				},
+				isGecko: function() {
+					return true;
+				},
+				isIe: function() {
+					return false;
+				},
+				isIphone: function() {
+					return false;
+				},
+				isLinux: function() {
+					return false;
+				},
+				isMac: function() {
+					return false;
+				},
+				isMobile: function() {
+					return false;
+				},
+				isMozilla: function() {
+					return false;
+				},
+				isOpera: function() {
+					return false;
+				},
+				isRtf: function() {
+					return true;
+				},
+				isSafari: function() {
+					return true;
+				},
+				isSun: function() {
+					return false;
+				},
+				isWap: function() {
+					return false;
+				},
+				isWapXhtml: function() {
+					return false;
+				},
+				isWebKit: function() {
+					return true;
+				},
+				isWindows: function() {
+					return true;
+				},
+				isWml: function() {
+					return false;
+				}
+			},
+
+			Data: {
+				isCustomizationView: function() {
+					return false;
+				},
+
+				notices: [
+					null
+
+					
+
+					
+				]
+			},
+
+			ThemeDisplay: {
+				getCDNDynamicResourcesHost: function() {
+					return "";
+				},
+				getCDNHost: function() {
+					return "";
+				},
+				getCompanyId: function() {
+					return "10132";
+				},
+				getCompanyGroupId: function() {
+					return "10165";
+				},
+				getUserId: function() {
+					return "84902333";
+				},
+
+				
+					getUserName: function() {
+						return "\u0056\u0069\u0063\u0074\u006f\u0072\u0020\u0043\u0072\u0075\u007a\u0020\u0047\u006f\u006d\u0065\u007a";
+					},
+				
+
+				getDoAsUserIdEncoded: function() {
+					return "";
+				},
+				getPlid: function() {
+					return "85105750";
+				},
+
+				
+					getLayoutId: function() {
+						return "11";
+					},
+					getLayoutURL: function() {
+						return "/web/introduccion-al-machine-learning-2-edicion-/reto";
+					},
+					isPrivateLayout: function() {
+						return "false";
+					},
+					getParentLayoutId: function() {
+						return "0";
+					},
+				
+
+				getScopeGroupId: function() {
+					return "85105733";
+				},
+				getScopeGroupIdOrLiveGroupId: function() {
+					return "85105733";
+				},
+				getParentGroupId: function() {
+					return "85105733";
+				},
+				isImpersonated: function() {
+					return false;
+				},
+				isSignedIn: function() {
+					return true;
+				},
+				getDefaultLanguageId: function() {
+					return "es_ES";
+				},
+				getLanguageId: function() {
+					return "es_ES";
+				},
+				isAddSessionIdToURL: function() {
+					return false;
+				},
+				isFreeformLayout: function() {
+					return false;
+				},
+				isStateExclusive: function() {
+					return false;
+				},
+				isStateMaximized: function() {
+					return false;
+				},
+				isStatePopUp: function() {
+					return false;
+				},
+				getPathContext: function() {
+					return "";
+				},
+				getPathImage: function() {
+					return "/image";
+				},
+				getPathJavaScript: function() {
+					return "/html/js";
+				},
+				getPathMain: function() {
+					return "/c";
+				},
+				getPathThemeImages: function() {
+					return "https://miriadax.net/miriadax-theme/images";
+				},
+				getPathThemeRoot: function() {
+					return "/miriadax-theme/";
+				},
+				getURLControlPanel: function() {
+					return "/group/control_panel?doAsGroupId=85105733&refererPlid=85105750";
+				},
+				getURLHome: function() {
+					return "https://miriadax.net/home";
+				},
+				getSessionId: function() {
+					
+						
+							return "690229CD6A00716FDE018C0899271B8C.node1";
+						
+						
+					
+				},
+				getPortletSetupShowBordersDefault: function() {
+					return true;
+				}
+			},
+
+			PropsValues: {
+				NTLM_AUTH_ENABLED: false
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		
+
+		Liferay.AUI = {
+			getBaseURL: function() {
+				return 'https://miriadax.net/html/js/aui/';
+			},
+			getCombine: function() {
+				return true;
+			},
+			getComboPath: function() {
+				return '/combo/?browserId=other&minifierType=&languageId=es_ES&b=6101&t=1508748473000&p=/html/js&';
+			},
+			getFilter: function() {
+				
+					
+						return {
+							replaceStr: function(match, fragment, string) {
+								return fragment + 'm=' + (match.split('/html/js')[1] || '');
+							},
+							searchExp: '(\\?|&)/([^&]+)'
+						};
+					
+					
+					
+				
+			},
+			getJavaScriptRootPath: function() {
+				return '/html/js';
+			},
+			getLangPath: function () {
+				return 'aui_lang.jsp?browserId=other&themeId=miriadax_WAR_miriadaxtheme&colorSchemeId=01&minifierType=js&languageId=es_ES&b=6101&t=1508748473000';
+			},
+			getRootPath: function() {
+				return '/html/js/aui/';
+			}
+		};
+
+		window.YUI_config = {
+			base: Liferay.AUI.getBaseURL(),
+			comboBase: Liferay.AUI.getComboPath(),
+			fetchCSS: true,
+			filter: Liferay.AUI.getFilter(),
+			root: Liferay.AUI.getRootPath(),
+			useBrowserConsole: false
+		};
+
+		Liferay.authToken = '0uCjNVtP';
+
+		
+
+		Liferay.currentURL = '\x2fweb\x2fintroduccion-al-machine-learning-2-edicion-\x2freto\x3fp_auth\x3d0uCjNVtP\x26p_p_auth\x3d4GOVBtb2\x26p_p_id\x3dexecactivity_WAR_liferaylmsportlet\x26p_p_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet\x26p_r_p_564233524_actId\x3d129224\x26_execactivity_WAR_liferaylmsportlet_latId\x3d50702962\x26_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x3dcorrect';
+		Liferay.currentURLEncoded = '%2Fweb%2Fintroduccion-al-machine-learning-2-edicion-%2Freto%3Fp_auth%3D0uCjNVtP%26p_p_auth%3D4GOVBtb2%26p_p_id%3Dexecactivity_WAR_liferaylmsportlet%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_o_p_id%3DactivityViewer_WAR_liferaylmsportlet%26p_r_p_564233524_actId%3D129224%26_execactivity_WAR_liferaylmsportlet_latId%3D50702962%26_execactivity_WAR_liferaylmsportlet_javax.portlet.action%3Dcorrect';
+	// ]]>
+</script>
+
+
+	
+		
+			
+			
+				<script src="./Miríada X - evaluacion4_files/everything.jsp" type="text/javascript"></script>
+			
+		
+	
+	
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+		
+
+			
+
+			
+				Liferay.Portlet.list = ['lmsactivitieslist_WAR_liferaylmsportlet','ModuleTitle_WAR_liferaylmsportlet','moduleDescription_WAR_liferaylmsportlet','activityViewer_WAR_liferaylmsportlet','activityNavigator_WAR_liferaylmsportlet'];
+			
+		
+
+		
+
+		
+			
+				
+				
+					Liferay._editControlsState = 'visible';
+				
+			
+		
+	// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<link class="lfr-css-file" href="./Miríada X - evaluacion4_files/main(2).css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+	<style type="text/css">
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_lmsactivitieslist_WAR_liferaylmsportlet_ .portlet {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_ModuleTitle_WAR_liferaylmsportlet_ {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_moduleDescription_WAR_liferaylmsportlet_ {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_activityViewer_WAR_liferaylmsportlet_ {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_activityNavigator_WAR_liferaylmsportlet_ {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+	</style>
+
+
+
+	
+				<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-76295-30']);
+			  _gaq.push(['_trackPageview']);
+			
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();	
+			</script>	
+			
+			<!-- Begin comScore Inline Tag 1.1302.13 --> 
+			<script type="text/javascript"> 
+			// <![CDATA[
+			function udm_(e){var t="comScore=",n=document,r=n.cookie,i="",s="indexOf",o="substring",u="length",a=2048,f,l="&ns_",c="&",h,p,d,v,m=window,g=m.encodeURIComponent||escape;if(r[s](t)+1)for(d=0,p=r.split(";"),v=p[u];d<v;d++)h=p[d][s](t),h+1&&(i=c+unescape(p[d][o](h+t[u])));e+=l+"_t="+ +(new Date)+l+"c="+(n.characterSet||n.defaultCharset||"")+"&c8="+g(n.title)+i+"&c7="+g(n.URL)+"&c9="+g(n.referrer),e[u]>a&&e[s](c)>0&&(f=e[o](0,a-8).lastIndexOf(c),e=(e[o](0,f)+l+"cut="+g(e[o](f+1)))[o](0,a)),n.images?(h=new Image,m.ns_p||(ns_p=h),h.src=e):n.write("<","p","><",'img src="',e,'" height="1" width="1" alt="*"',"><","/p",">")};
+			udm_('http'+(document.location.href.charAt(4)=='s'?'s://sb':'://b')+'.scorecardresearch.com/b?c1=2&c2=16058935&ns_site=net-miriadax');
+			// ]]>
+			</script>
+			<noscript>&lt;p&gt;&lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;amp;c2=16058935&amp;amp;ns_site=net-miriadax" height="1" width="1" alt="*"&gt;&lt;/p&gt;</noscript> 
+			<!-- End comScore Inline Tag -->
+			<!-- Begin comScore Inline Tag 1.1302.13 -->
+			<script type="text/javascript" language="JavaScript1.3" src="./Miríada X - evaluacion4_files/cs.js.descarga"></script>
+			<!-- End comScore Inline Tag -->			
+		
+<link id="aui_3_4_0_1_64" type="text/css" rel="stylesheet" href="./Miríada X - evaluacion4_files/saved_resource" charset="utf-8"><script id="aui_3_4_0_1_65" type="text/javascript" src="./Miríada X - evaluacion4_files/saved_resource(1)" charset="utf-8"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><link id="aui_3_4_0_1_76" type="text/css" rel="stylesheet" href="./Miríada X - evaluacion4_files/saved_resource(2)" charset="utf-8"><script id="aui_3_4_0_1_77" type="text/javascript" src="./Miríada X - evaluacion4_files/saved_resource(3)" charset="utf-8"></script><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">@font-face{font-family:rbicon;src:url(chrome-extension://dipiagiiohfljcicegpgffpbnjmgjcnf/fonts/rbicon.woff2) format("woff2");font-weight:400;font-style:normal}</style></head>
+
+<body class="guest yui3-skin-sam controls-visible signed-in public-page site "><div id="MathJax_Message" style="display: none;"></div>
+
+<!-- Google Tag Manager -->
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-P795F6"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P795F6');</script>
+<!-- End Google Tag Manager -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_lopdportlet_WAR_lopdhook_  portlet-static portlet-static-end portlet-borderless lopdportlet-portlet " id="p_p_id_lopdportlet_WAR_lopdhook_">
+		<span id="p_lopdportlet_WAR_lopdhook"></span>
+
+		<div class="portlet-body">
+
+
+
+	
+	
+	
+	
+
+		
+
+			
+				
+					
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+			
+
+				
+
+				<div class="portlet-borderless-container" style="">
+					
+
+					
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+
+		 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	//<![CDATA[
+	$(document).ready(function(){
+		$(".cookiesmsclose").click(function(){
+				$(".cookiesms").css("display","none");
+				 jQuery.ajax({
+				     url: "/lopd-hook/html/cookies/aceptausocookies.jsp",
+				     context: document.body,
+				     type: "GET",
+				     data: {
+				   	  },
+				     dataType: "html",
+				     cache: false,
+				     ajaxOptions: 
+				     {
+				   	  cache: false
+				     },
+				     success: function(source)
+				     {}
+				   });
+				  
+				
+		});
+	});
+	//]]>
+</script>
+
+
+
+
+	
+	
+
+					
+				
+			
+			
+		
+	
+	
+
+
+
+	</div>
+
+				</div>
+
+				
+			
+		
+	
+
+				
+				
+			
+
+		
+
+	
+
+
+
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+<!-- CONTENIDO -->
+<div id="navigation_sup">		
+	<span class="nav-control menu-close">
+		<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&amp;p_p_auth=4GOVBtb2&amp;p_p_id=execactivity_WAR_liferaylmsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_o_p_id=activityViewer_WAR_liferaylmsportlet&amp;p_r_p_564233524_actId=129224&amp;_execactivity_WAR_liferaylmsportlet_latId=50702962&amp;_execactivity_WAR_liferaylmsportlet_javax.portlet.action=correct#" class="menu">Navigation</a>
+	</span>		
+	
+	<div class="navigation-row">
+		<div id="nav_and_out">
+			<div class="clearfix header_sec2">
+		
+		
+				<div class="floatl">
+					<a id="enlace_telef" style="background-image:url(&#39;/image/layout_set_logo?img_id=12042&#39;);" href="https://miriadax.net/home"></a>
+				</div>	
+				<div class="floatr ">
+					<span id="languagePortlet">
+						
+						
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_82_  portlet-static portlet-static-end portlet-borderless portlet-language " id="p_p_id_82_">
+		<span id="p_82"></span>
+
+		<div class="portlet-body">
+
+
+
+	
+	
+	
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+			
+
+				
+
+				<div class="portlet-borderless-container" style="">
+					
+
+					
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+		
+
+			
+				
+					<a class="taglib-language-list-text " href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_p_id=82&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;_82_struts_action=%2Flanguage%2Fview&amp;_82_redirect=%2Fweb%2Fintroduccion-al-machine-learning-2-edicion-%2Freto%3Fp_auth%3D0uCjNVtP%26p_p_auth%3D4GOVBtb2%26p_p_id%3Dexecactivity_WAR_liferaylmsportlet%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_o_p_id%3DactivityViewer_WAR_liferaylmsportlet%26p_r_p_564233524_actId%3D129224%26_execactivity_WAR_liferaylmsportlet_latId%3D50702962%26_execactivity_WAR_liferaylmsportlet_javax.portlet.action%3Dcorrect&amp;languageId=es_ES" lang="es-ES">
+						español
+						
+
+						
+					</a>
+				
+				
+			
+
+		
+
+			
+				
+					<a class="taglib-language-list-text last" href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_p_id=82&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;_82_struts_action=%2Flanguage%2Fview&amp;_82_redirect=%2Fweb%2Fintroduccion-al-machine-learning-2-edicion-%2Freto%3Fp_auth%3D0uCjNVtP%26p_p_auth%3D4GOVBtb2%26p_p_id%3Dexecactivity_WAR_liferaylmsportlet%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_o_p_id%3DactivityViewer_WAR_liferaylmsportlet%26p_r_p_564233524_actId%3D129224%26_execactivity_WAR_liferaylmsportlet_latId%3D50702962%26_execactivity_WAR_liferaylmsportlet_javax.portlet.action%3Dcorrect&amp;languageId=pt_BR" lang="pt-BR">
+						português
+						
+
+						
+					</a>
+				
+				
+			
+
+		
+
+	
+
+	
+
+					
+				
+			
+			
+		
+	
+	
+
+
+
+	</div>
+
+				</div>
+
+				
+			
+		
+	
+
+
+	
+
+
+
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+						
+					</span>
+																				                    							<!--span id="userName">Hola, Victor Cruz Gomez</span-->
+							<span>
+							   
+							   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_menunavegacion_WAR_menupersonalizadoportlet_  portlet-static portlet-static-end portlet-borderless menunavegacion-portlet " id="p_p_id_menunavegacion_WAR_menupersonalizadoportlet_">
+		<span id="p_menunavegacion_WAR_menupersonalizadoportlet"></span>
+
+		<div class="portlet-body">
+
+
+
+	
+	
+	
+	
+
+		
+
+			
+				
+					
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+			
+
+				
+
+				<div class="portlet-borderless-container" style="">
+					
+
+					
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="menunavegacion" class="nav-general">
+	<ul id="menudearriba">
+		<li class="user-avatar">
+			<!-- No podemos dejar que los usuario entren al panel de control. Creamos el enlace al perfil del usuario. -->		
+			<span class="user-portrait " title="Administrar mi cuenta" data-controlpanelcategory="my">
+				<img alt="Victor Cruz Gomez" src="./Miríada X - evaluacion4_files/user_female_portrait">
+			</span>	
+				
+			<span class="user-fullname use-dialog" title="Administrar mi cuenta" data-controlpanelcategory="my">
+				Victor Cruz Gomez
+			</span>
+		</li>
+		<li class="submenudearriba">
+			<span class="secction_nav"> </span>
+			<div class="desplegable" style="display: none;">
+				<span class="flecha"></span>
+				<ul class="menu_lista"> 
+					
+									<li class="menu_elemento secction_nav2">
+										
+										<a href="https://miriadax.net/web/guest/mi-pagina">Inicio</a>
+									</li>
+								
+									<li class="menu_elemento secction_nav2">
+										
+										<a href="https://miriadax.net/web/guest/mi-perfil">Mi Perfil</a>
+									</li>
+								
+						<li class="elemento_menu">
+							<a href="https://miriadax.net/c/portal/logout">Cerrar sesión</a>
+						</li>
+					
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+
+
+	
+	
+
+					
+				
+			
+			
+		
+	
+	
+
+
+
+	</div>
+
+				</div>
+
+				
+			
+		
+	
+
+				
+				
+			
+
+		
+
+	
+
+
+
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+							   
+							</span>
+							<span id="separator_name"><img src="./Miríada X - evaluacion4_files/user_female_portrait"></span>
+							<span id="bt_out" style="display:none">
+								<a id="sign-in" href="https://miriadax.net/c/portal/logout">Salir</a>
+							</span>
+									</div>	
+				
+				<div class="icono_login">
+																				                    							<span id="bt_out">
+								<a href="https://miriadax.net/c/portal/logout" id="sign-in-movil" rel="nofollow" class="login-movil"></a>
+							</span>
+									</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<div id="wrapper" style="display:block;">
+	<header id="banner" role="banner">
+		
+				
+		
+                
+        		<div class="nav-general nav-main">
+			<div id="portletnav">
+				
+				<div class="floatr "> 
+					<span id="languagePortlet">
+						
+						
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_82_  portlet-static portlet-static-end portlet-borderless portlet-language " id="p_p_id_82_">
+		<span id="p_82"></span>
+
+		<div class="portlet-body">
+
+
+
+	
+	
+	
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+			
+
+				
+
+				<div class="portlet-borderless-container" style="">
+					
+
+					
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+		
+
+			
+				
+					<a class="taglib-language-list-text " href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_p_id=82&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;_82_struts_action=%2Flanguage%2Fview&amp;_82_redirect=%2Fweb%2Fintroduccion-al-machine-learning-2-edicion-%2Freto%3Fp_auth%3D0uCjNVtP%26p_p_auth%3D4GOVBtb2%26p_p_id%3Dexecactivity_WAR_liferaylmsportlet%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_o_p_id%3DactivityViewer_WAR_liferaylmsportlet%26p_r_p_564233524_actId%3D129224%26_execactivity_WAR_liferaylmsportlet_latId%3D50702962%26_execactivity_WAR_liferaylmsportlet_javax.portlet.action%3Dcorrect&amp;languageId=es_ES" lang="es-ES">
+						español
+						
+
+						
+					</a>
+				
+				
+			
+
+		
+
+			
+				
+					<a class="taglib-language-list-text last" href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_p_id=82&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;_82_struts_action=%2Flanguage%2Fview&amp;_82_redirect=%2Fweb%2Fintroduccion-al-machine-learning-2-edicion-%2Freto%3Fp_auth%3D0uCjNVtP%26p_p_auth%3D4GOVBtb2%26p_p_id%3Dexecactivity_WAR_liferaylmsportlet%26p_p_lifecycle%3D1%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_o_p_id%3DactivityViewer_WAR_liferaylmsportlet%26p_r_p_564233524_actId%3D129224%26_execactivity_WAR_liferaylmsportlet_latId%3D50702962%26_execactivity_WAR_liferaylmsportlet_javax.portlet.action%3Dcorrect&amp;languageId=pt_BR" lang="pt-BR">
+						português
+						
+
+						
+					</a>
+				
+				
+			
+
+		
+
+	
+
+	
+
+					
+				
+			
+			
+		
+	
+	
+
+
+
+	</div>
+
+				</div>
+
+				
+			
+		
+	
+
+
+	
+
+
+
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+						
+					</span>
+				
+					
+																				                    							<span id="userName">Hola, Victor Cruz Gomez</span>
+							<span id="separator_name"><img src="./Miríada X - evaluacion4_files/user_female_portrait"></span>
+							<span id="bt_out">&nbsp;
+								<a id="sign-in" href="https://miriadax.net/c/portal/logout">Salir</a>
+							</span>
+									</div>	
+			
+			
+				
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_generalnav_ISC_WAR_npanav_ISCportlet_  portlet-static portlet-static-end portlet-borderless generalnav-portlet " id="p_p_id_generalnav_ISC_WAR_npanav_ISCportlet_">
+		<span id="p_generalnav_ISC_WAR_npanav_ISCportlet"></span>
+
+		<div class="portlet-body">
+
+
+
+	
+	
+	
+	
+
+		
+
+			
+				
+					
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+			
+
+				
+
+				<div class="portlet-borderless-container" style="">
+					
+
+					
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="curso-back reto ">
+	<div class="menum">
+	<ul id="menudearriba" class="desktop">
+	
+					<li class="menudearriba1" style="display:none"> 
+				
+					
+					     <a id="id_primera-oculta" class="secction_nav primera-oculta" href="https://miriadax.net/web/general-navigation/primera-oculta">Primera oculta</a>				
+	
+					</li>
+	
+					<li class="menudearriba2"> 
+				
+					
+					     <a id="id_cursos" class="secction_nav cursos" href="https://miriadax.net/web/general-navigation/cursos">Cursos</a>				
+	
+					</li>
+	
+					<li class="submenudearriba submenu-close menudearriba3"> 
+				
+					<span class="secction_nav">Instituciones</span>
+					<div id="id2" class="desplegable" style="display: none;">
+			
+					<ul>
+			
+			
+				
+					<li class="secction_nav2">
+						<a href="https://miriadax.net/web/guest/universidades">Partners Educativos</a></li>						
+	
+				
+					<li class="secction_nav2">
+						<a href="https://miriadax.net/web/guest/unirse-a-miriada-x">Unirse a Miríada X</a></li>						
+	
+					</ul>
+					</div>
+		
+			
+					</li>
+	
+					<li class="submenudearriba submenu-close menudearriba4 lastd"> 
+				
+					<span class="secction_nav">Novedades</span>
+					<div id="id3" class="desplegable" style="display: none;">
+			
+					<ul>
+			
+			
+				
+					<li class="secction_nav2">
+						<a href="https://miriadax.net/web/guest/blog">Blog</a></li>						
+	
+				
+					<li class="secction_nav2">
+						<a href="https://miriadax.net/web/guest/eventos">Eventos</a></li>						
+	
+					</ul>
+					</div>
+		
+			
+					</li>
+	
+	
+	</ul>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	
+	
+
+					
+				
+			
+			
+		
+	
+	
+
+
+
+	</div>
+
+				</div>
+
+				
+			
+		
+	
+
+				
+				
+			
+
+		
+
+	
+
+
+
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+				 
+				
+				
+				
+								<div id="title_and_nav">
+											<nav class="sort-pages modify-pages" id="navigation">
+	<div id="navigation_table" class="">
+		        		
+		<div id="navigation_table_column1">
+			<div class="course-certificate">Curso con certificación oficial</div>
+			<div><a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&amp;p_p_auth=4GOVBtb2&amp;p_p_id=execactivity_WAR_liferaylmsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_o_p_id=activityViewer_WAR_liferaylmsportlet&amp;p_r_p_564233524_actId=129224&amp;_execactivity_WAR_liferaylmsportlet_latId=50702962&amp;_execactivity_WAR_liferaylmsportlet_javax.portlet.action=correct">Introducción al Machine Learning (2.ª edición)</a></div>
+		</div>
+
+											<div id="navigation_table_column2">
+						<ul id="menudeabajo">
+																																			<li class="Inicio">
+																			                    									<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/inicio">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Inicio</a></li>
+																			
+																																									<li class="Syllabus">
+																			                    									<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/syllabus">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Syllabus</a></li>
+																			
+																																									<li class="Notas">
+																			                    									<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/notas">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Notas</a></li>
+																			
+																																									<li class="lastchild Foro">
+																			                    									<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/foro">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Foro</a></li>
+																			
+																</ul>
+				</div>
+						</div>
+</nav>
+
+									</div>
+							</div>										
+		</div>	
+			</header>
+	<div class="titularPaginaHeader">
+					<div id="title_and_nav">
+									<nav class="sort-pages modify-pages" id="navigation">
+	<div id="navigation_table" class="">
+		        		
+		<div id="navigation_table_column1">
+			<div class="course-certificate">Curso con certificación oficial</div>
+			<div><a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&amp;p_p_auth=4GOVBtb2&amp;p_p_id=execactivity_WAR_liferaylmsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_o_p_id=activityViewer_WAR_liferaylmsportlet&amp;p_r_p_564233524_actId=129224&amp;_execactivity_WAR_liferaylmsportlet_latId=50702962&amp;_execactivity_WAR_liferaylmsportlet_javax.portlet.action=correct">Introducción al Machine Learning (2.ª edición)</a></div>
+		</div>
+
+											<div id="navigation_table_column2">
+						<ul id="menudeabajo">
+																																			<li class="Inicio">
+																			                    									<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/inicio">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Inicio</a></li>
+																			
+																																									<li class="Syllabus">
+																			                    									<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/syllabus">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Syllabus</a></li>
+																			
+																																									<li class="Notas">
+																			                    									<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/notas">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Notas</a></li>
+																			
+																																									<li class="lastchild Foro">
+																			                    									<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/foro">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Foro</a></li>
+																			
+																</ul>
+				</div>
+						</div>
+</nav>
+
+							</div>
+			</div>		
+		<div class="nav-breadcrumb">
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_73_  portlet-static portlet-static-end portlet-borderless portlet-breadcrumb " id="p_p_id_73_INSTANCE_4444_">
+		<span id="p_73_INSTANCE_4444"></span>
+
+		<div class="portlet-body">
+
+
+
+	
+	
+	
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+			
+
+				
+
+				<div class="portlet-borderless-container" style="">
+					
+
+					
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="breadcrumbs breadcrumbs-horizontal lfr-component">
+	<li class="first"><span><a href="https://miriadax.net/home">Miríada X</a></span></li><li class="last"><span><a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto">Reto</a></span></li>
+</ul>
+
+	
+
+					
+				
+			
+			
+		
+	
+	
+
+
+
+	</div>
+
+				</div>
+
+				
+			
+		
+	
+
+
+	
+
+
+
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+		
+	</div>
+		<div id="content">			
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_103_  portlet-static portlet-static-end  " id="p_p_id_103_">
+		<span id="p_103"></span>
+
+		<div class="portlet-body">
+
+
+
+	
+	
+	
+	
+
+		
+
+	
+
+
+
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+	
+
+<div class="columns-2" id="main-content" role="main">
+			<div class="portlet-layout">
+			<div class="aui-w30 portlet-column portlet-column-first" id="column-1">
+				<div class="portlet-dropzone portlet-column-content portlet-column-content-first" id="layout-column_column-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_lmsactivitieslist_WAR_liferaylmsportlet_  portlet-static portlet-static-end lmsactivitieslist-portlet bg_color1" id="p_p_id_lmsactivitieslist_WAR_liferaylmsportlet_">
+		<span id="p_lmsactivitieslist_WAR_liferaylmsportlet"></span>
+
+		<div class="portlet-body">
+
+
+
+	
+	
+	
+	
+
+		
+
+			
+				
+					
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+				
+
+<section class="portlet" id="portlet_lmsactivitieslist_WAR_liferaylmsportlet">
+	<header class="portlet-topper"> 
+		<h1 class="portlet-title">	
+			<span class="portlet-title-text">Módulos</span>
+		</h1>
+
+					<menu class="portlet-topper-toolbar" id="portlet-topper-toolbar_lmsactivitieslist_WAR_liferaylmsportlet" type="toolbar">
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		
+
+		
+	
+
+				
+				
+							</menu>
+			</header>
+	
+	<div class="portlet-content">
+		
+					<div class=" portlet-content-container" style="">
+						
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- vd-48-Fri Mar 24 08:42:55 GMT 2017-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- vd-48-Fri Mar 24 08:42:55 GMT 2017-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!-- 
+var ismobile=navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+
+if(!ismobile){
+AUI().ready('node','aui-io-request','aui-parse-content','aui-sortable',function(A) {
+
+	new A.Sortable(
+		{
+			container: A.one('#myContainer'),
+		    nodes: 'ul#myModule > li',
+            after: {   
+            	'drag:end': function(event){ 
+            		
+				    var node = event.target.get('node'),
+			            prev = node.previous(),
+			            next = node.next(),
+                        movedPageId = parseInt(node.get('id').substr(41),0),
+		            	prevPageId = 0,
+		            	nextPageId = 0;
+				    
+			        if(prev){
+			          prevPageId = parseInt(prev.get('id').substr(41),0);
+				    }
+
+			        if(next){
+			          nextPageId = parseInt(next.get('id').substr(41),0);
+				    }
+
+					A.io.request('https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&p_p_id=lmsactivitieslist_WAR_liferaylmsportlet&p_p_lifecycle=1&p_p_state=exclusive&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_lmsactivitieslist_WAR_liferaylmsportlet_javax.portlet.action=moveModule', {  
+						data: {
+				            _lmsactivitieslist_WAR_liferaylmsportlet_pageId: movedPageId,
+				            _lmsactivitieslist_WAR_liferaylmsportlet_prevPageId: prevPageId,
+				            _lmsactivitieslist_WAR_liferaylmsportlet_nextPageId: nextPageId
+				        },
+					    dataType : 'html', 
+					  on: {  
+				  		success: function() {  
+							 Liferay.Portlet.refresh(A.one('#p_p_id_lmsactivitieslist_WAR_liferaylmsportlet_'),{'p_t_lifecycle':0,'_lmsactivitieslist_WAR_liferaylmsportlet_PORTLET_CONFIGURATOR_VISIBILITY':'true'});
+				        }  
+					   }  
+					});    
+            	}              
+            }
+		}
+	);
+  });
+}
+
+//-->
+</script>
+<div id="myContainer" class="modulo portlet-toolbar search-form lms-tree">
+	<ul id="idModuleUl">
+		
+				
+				
+				<li class="option-none  " id="_lmsactivitieslist_WAR_liferaylmsportlet_61446">
+					
+										
+					
+						<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&amp;p_p_id=lmsactivitieslist_WAR_liferaylmsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;r_p_r_p564233524_actId=1&amp;_lmsactivitieslist_WAR_liferaylmsportlet_javax.portlet.action=goToModule&amp;p_r_p_564233524_moduleId=61446&amp;_lmsactivitieslist_WAR_liferaylmsportlet_themeId=1" id="aui_3_4_0_1_175">
+						
+						<span class="desplegar"></span>
+						
+						Módulo 1. Introducción al Machine Learning</a>
+								
+				</li>
+			
+				
+				
+				<li class="option-none  " id="_lmsactivitieslist_WAR_liferaylmsportlet_61447">
+					
+										
+					
+						<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&amp;p_p_id=lmsactivitieslist_WAR_liferaylmsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;r_p_r_p564233524_actId=1&amp;_lmsactivitieslist_WAR_liferaylmsportlet_javax.portlet.action=goToModule&amp;p_r_p_564233524_moduleId=61447&amp;_lmsactivitieslist_WAR_liferaylmsportlet_themeId=2" id="aui_3_4_0_1_178">
+						
+						<span class="desplegar"></span>
+						
+						Módulo 2. Nuestros datos. ¿Están preparados para el Machine Learning?</a>
+								
+				</li>
+			
+				
+				
+				<li class="option-none  " id="_lmsactivitieslist_WAR_liferaylmsportlet_61448">
+					
+										
+					
+						<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&amp;p_p_id=lmsactivitieslist_WAR_liferaylmsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;r_p_r_p564233524_actId=1&amp;_lmsactivitieslist_WAR_liferaylmsportlet_javax.portlet.action=goToModule&amp;p_r_p_564233524_moduleId=61448&amp;_lmsactivitieslist_WAR_liferaylmsportlet_themeId=3" id="aui_3_4_0_1_181">
+						
+						<span class="desplegar"></span>
+						
+						Módulo 3. Soluciones de Machine Learning: Aprendizaje Supervisado</a>
+								
+				</li>
+			
+				
+				
+				<li class="option-none  option-less" id="_lmsactivitieslist_WAR_liferaylmsportlet_61449">
+					
+						<span class="desplegar"></span>
+						
+										
+					
+						<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&amp;p_p_id=lmsactivitieslist_WAR_liferaylmsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;r_p_r_p564233524_actId=1&amp;_lmsactivitieslist_WAR_liferaylmsportlet_javax.portlet.action=goToModule&amp;p_r_p_564233524_moduleId=61449&amp;_lmsactivitieslist_WAR_liferaylmsportlet_themeId=4">
+						
+						Módulo 4. Soluciones de Machine Learning: Aprendizaje No Supervisado</a>
+						
+						<div class="lms-desplegable" style="overflow: hidden;">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- vd-48-Fri Mar 24 08:42:55 GMT 2017-->
+
+
+
+
+
+
+
+
+
+
+<ul id="myActivities">
+			
+						
+							
+						
+
+						<li class="learningActivity desactivado  passed" title="Tu resultado es: 100" id="_lmsactivitieslist_WAR_liferaylmsportlet_129218">
+							<span class="type_2"></span>
+							<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_p_auth=olutFPB9&amp;p_p_id=resourceExternalActivity_WAR_liferaylmsportlet&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;p_r_p_564233524_actId=129218&amp;p_r_p_564233524_moduleId=61449&amp;p_o_p_id=activityViewer_WAR_liferaylmsportlet">Segmentación y clusters</a>
+							
+					
+				</li>
+			
+						
+							
+						
+
+						<li class="learningActivity desactivado  passed" title="Tu resultado es: 100" id="_lmsactivitieslist_WAR_liferaylmsportlet_129220">
+							<span class="type_2"></span>
+							<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_p_auth=olutFPB9&amp;p_p_id=resourceExternalActivity_WAR_liferaylmsportlet&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;p_r_p_564233524_actId=129220&amp;p_r_p_564233524_moduleId=61449&amp;p_o_p_id=activityViewer_WAR_liferaylmsportlet">Detección de anomalías: anomaly detector</a>
+							
+					
+				</li>
+			
+						
+							
+						
+
+						<li class="learningActivity desactivado  passed" title="Tu resultado es: 100" id="_lmsactivitieslist_WAR_liferaylmsportlet_129222">
+							<span class="type_2"></span>
+							<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_p_auth=olutFPB9&amp;p_p_id=resourceExternalActivity_WAR_liferaylmsportlet&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;p_r_p_564233524_actId=129222&amp;p_r_p_564233524_moduleId=61449&amp;p_o_p_id=activityViewer_WAR_liferaylmsportlet">Reglas de asociación: Association Rules</a>
+							
+					
+				</li>
+			
+						
+							
+						
+
+						<li class="learningActivity activado  passed" title="Tu resultado es: 80" id="_lmsactivitieslist_WAR_liferaylmsportlet_129224">
+							<span class="type_0"></span>
+							<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_p_auth=4GOVBtb2&amp;p_p_id=execactivity_WAR_liferaylmsportlet&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;p_r_p_564233524_actId=129224&amp;p_r_p_564233524_moduleId=61449&amp;_execactivity_WAR_liferaylmsportlet_mvcPath=%2Fhtml%2Fexecactivity%2Ftest%2Fview.jsp&amp;p_o_p_id=activityViewer_WAR_liferaylmsportlet">Evaluación Módulo 4</a>
+							
+					
+				</li>
+			
+						
+							
+						
+
+						<li class="learningActivity desactivado  not-started" id="_lmsactivitieslist_WAR_liferaylmsportlet_129226">
+							<span class="type_2"></span>
+							<a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_p_auth=olutFPB9&amp;p_p_id=resourceExternalActivity_WAR_liferaylmsportlet&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;p_r_p_564233524_actId=129226&amp;p_r_p_564233524_moduleId=61449&amp;p_o_p_id=activityViewer_WAR_liferaylmsportlet">Cierre de curso</a>
+							
+					
+				</li>
+			
+</ul>
+						</div>
+							
+				</li>
+			
+			</ul>
+			</div>
+		
+
+
+	
+<script type="text/javascript">
+
+AUI().ready('event', 'node','aui-base','aui-dialog','aui-dialog-iframe','anim','json',function(A) {
+	
+	A.one(window).on('message', 
+		function(event){
+
+			var html5Event=event._event;
+
+			if(A.Lang.isString(html5Event.data)){
+				html5Event={data:JSON.parse(html5Event.data)};
+			}
+	
+			if(html5Event.data.name=='reloadModule'){
+				
+				if(html5Event.data.moduleId==61449)
+				
+				{
+					var moduleTitlePortlet=A.one('#p_p_id_ModuleTitle_WAR_liferaylmsportlet_');
+					if(moduleTitlePortlet!=null) {
+						Liferay.Portlet.refresh(moduleTitlePortlet);
+					}
+
+					var moduleDescriptionPortlet=A.one('#p_p_id_moduleDescription_WAR_liferaylmsportlet_');
+					if(moduleDescriptionPortlet!=null) {
+						Liferay.Portlet.refresh(moduleDescriptionPortlet);
+					}
+
+					var activityNavigatorPortlet=A.one('#p_p_id_activityNavigator_WAR_liferaylmsportlet_');
+					if(activityNavigatorPortlet!=null) {
+						Liferay.Portlet.refresh(activityNavigatorPortlet);
+					}
+				}
+
+				Liferay.Portlet.refresh(A.one('#p_p_id_lmsactivitieslist_WAR_liferaylmsportlet_'));	
+  
+			}
+			else if(html5Event.data.name=='closeModule'){
+				A.DialogManager.closeByChild('#editModule');
+			} 
+			else if(html5Event.data.name=='closeActivity'){
+				A.DialogManager.closeByChild('#editlesson');
+			}
+			else if(html5Event.data.name=='setTitleActivity'){
+				A.DialogManager.findByChild('#editlesson').set('title',html5Event.data.title);
+			}
+			else if((html5Event.data.name=='resizeWidthActivity')&&(!!html5Event.data.width)){
+				var editLessonDiv = A.one('#editlesson');
+				if((editLessonDiv!=null)&&(editLessonDiv.one('iframe.aui-resizeiframe-monitored-height')!=null)) {
+					editLessonDiv.setStyle('width',html5Event.data.width);
+				}
+			}
+
+		});
+
+});
+function updateActivityList()
+{
+	Liferay.Portlet.refresh('#p_p_id_lmsactivitieslist_WAR_liferaylmsportlet_');
+}
+</script>
+
+
+	
+	
+
+					
+				
+			
+			
+		
+	
+	
+
+
+
+	</div>
+
+					</div>
+				
+	</div>
+
+</section>
+<div class="bajo_caja"></div>
+
+			
+			
+		
+	
+
+				
+				
+			
+
+		
+
+	
+
+
+
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+	
+	
+</div>
+			</div>
+
+			<div class="aui-w70 portlet-column portlet-column-last" id="column-2">
+				<div class="portlet-dropzone portlet-column-content portlet-column-content-last" id="layout-column_column-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_ModuleTitle_WAR_liferaylmsportlet_  portlet-static portlet-static-end portlet-borderless moduletitle-portlet " id="p_p_id_ModuleTitle_WAR_liferaylmsportlet_">
+		<span id="p_ModuleTitle_WAR_liferaylmsportlet"></span>
+
+		<div class="portlet-body">
+
+
+
+	
+	
+	
+	
+
+		
+
+			
+				
+					
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+			
+
+				
+
+				<div class="portlet-borderless-container" style="">
+					
+
+					
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- vd-48-Fri Mar 24 08:42:55 GMT 2017-->
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="taglib-header ">
+	
+
+	<h1 class="header-title">
+		<span>
+			
+				
+					Módulo 4. Soluciones de Machine Learning: Aprendizaje No Supervisado
+				
+				
+			
+		</span>
+	</h1>
+</div>
+			
+
+	
+	
+
+					
+				
+			
+			
+		
+	
+	
+
+
+
+	</div>
+
+				</div>
+
+				
+			
+		
+	
+
+				
+				
+			
+
+		
+
+	
+
+
+
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_activityViewer_WAR_liferaylmsportlet_  portlet-static portlet-static-end portlet-borderless activityViewer-portlet " id="p_p_id_activityViewer_WAR_liferaylmsportlet_">
+		<span id="p_activityViewer_WAR_liferaylmsportlet"></span>
+
+		<div class="portlet-body">
+
+
+
+	
+	
+	
+	
+
+		
+
+			
+				
+					
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+			
+
+				
+
+				<div class="portlet-borderless-container" style="">
+					
+
+					
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_execactivity_WAR_liferaylmsportlet_  portlet-static portlet-static-end portlet-borderless execactivity-portlet " id="p_p_id_execactivity_WAR_liferaylmsportlet_">
+		<span id="p_execactivity_WAR_liferaylmsportlet"></span>
+
+		<div class="portlet-body">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+			
+
+				
+
+				<div class="portlet-borderless-container" style="">
+					
+
+					
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+
+		
+
+
+
+	
+	
+	
+	
+
+		
+
+			
+				
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- vd-48-Fri Mar 24 08:42:55 GMT 2017-->
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- vd-48-Fri Mar 24 08:42:55 GMT 2017-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+	#simplemodal-container{width:500px;height:280px;}
+</style>
+ 
+
+
+<script type="text/javascript">
+<!--
+$('#activityResult').dialog();
+//-->
+</script>
+
+				
+							<h2>Evaluación Módulo 4</h2>
+				
+		
+		<p>Prueba realizada</p>
+		
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- vd-48-Fri Mar 24 08:42:55 GMT 2017-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+		
+		
+			<p>Tu resultado en el test ha sido: 80%</p>
+			
+			
+	
+
+			<p class="color_tercero negrita">Has superado el test.</p>
+
+		<p class="negrita">Tus respuestas</p>
+<div class="question incorrect questiontype_options questiontype_0"><input type="hidden" name="_execactivity_WAR_liferaylmsportlet_question" value="123476"><div class="questiontext"><p>1. ¿Cuál de estas afirmaciones <strong>NO </strong>es correcta?</p></div><div class="content_answer"><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123476_0"><input id="_execactivity_WAR_liferaylmsportlet_question_123476_0" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234761509883903872" checked="checked" value="293144" disabled="disabled"><div class="answer-options"><p>Una diferencia entre los modelos de aprendizaje supervisado y no supervisado es que en los primeros el objetivo a predecir es una propiedad de las ya existentes en los datos de entrenamiento.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123476_1"><input id="_execactivity_WAR_liferaylmsportlet_question_123476_1" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234761509883903874" value="293145" disabled="disabled"><div class="answer-options"><p>Podemos mejorar nuestros modelos supervisados utilizando primero un detector de anomalías para eliminar de los datos de entrenamiento algunos errores y datos extremos.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123476_2"><input id="_execactivity_WAR_liferaylmsportlet_question_123476_2" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234761509883903876" value="293146" disabled="disabled"><div class="answer-options"><p>Usaremos la detección de asociaciones para agrupar nuestros productos o clientes según la similitud de sus propiedades.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123476_3"><input id="_execactivity_WAR_liferaylmsportlet_question_123476_3" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234761509883903877" value="293147" disabled="disabled"><div class="answer-options"><p>La técnica del clustering permite escoger el número de grupos a obtener usando el algoritmo k-means. </p></div></label></div></div></div><div class="question correct questiontype_options questiontype_0"><input type="hidden" name="_execactivity_WAR_liferaylmsportlet_question" value="123477"><div class="questiontext"><p>2. Cada técnica de Machine Learning es adecuada para solucionar distintos tipos de problemas, aunque algunos problemas pueden solucionarse aplicando más de una técnica. Señala qué solución <strong>NO </strong>es adecuada para el problema planteado.</p></div><div class="content_answer"><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123477_0"><input id="_execactivity_WAR_liferaylmsportlet_question_123477_0" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234771509883903901" value="293148" disabled="disabled"><div class="answer-options"><p>Para recomendar nuevos productos a un usuario en función de su compra podemos usar clustering o reglas de asociación.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123477_1"><input id="_execactivity_WAR_liferaylmsportlet_question_123477_1" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234771509883903903" checked="checked" value="293149" disabled="disabled"><div class="answer-options"><p>Para clasificar nuestros clientes según sus preferencias de compra podemos usar un detector de anomalías.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123477_2"><input id="_execactivity_WAR_liferaylmsportlet_question_123477_2" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234771509883903904" value="293150" disabled="disabled"><div class="answer-options"><p>Para optimizar la localización de nuestros productos en un expositor podemos usar un detector de asociaciones.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123477_3"><input id="_execactivity_WAR_liferaylmsportlet_question_123477_3" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234771509883903906" value="293151" disabled="disabled"><div class="answer-options"><p>Para el control del fraude en los apuntes bancarios podemos usar un detector de anomalías. </p></div></label></div></div></div><div class="question correct questiontype_options questiontype_0"><input type="hidden" name="_execactivity_WAR_liferaylmsportlet_question" value="123478"><div class="questiontext"><p>3. Tenemos un fichero con datos de nuestros clientes y queremos agruparlos para aplicar distintas estrategias de marketing según sus características. A priori, desconocemos cuántos grupos pueden darse ¿Cómo podríamos conseguirlo?</p></div><div class="content_answer"><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123478_0"><input id="_execactivity_WAR_liferaylmsportlet_question_123478_0" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234781509883903931" checked="checked" value="293152" disabled="disabled"><div class="answer-options"><p>Usando clustering con el algoritmo g-means.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123478_1"><input id="_execactivity_WAR_liferaylmsportlet_question_123478_1" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234781509883903932" value="293153" disabled="disabled"><div class="answer-options"><p>Usando la detección de asociaciones.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123478_2"><input id="_execactivity_WAR_liferaylmsportlet_question_123478_2" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234781509883903934" value="293154" disabled="disabled"><div class="answer-options"><p>Usando clustering con el algoritmo k-means.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123478_3"><input id="_execactivity_WAR_liferaylmsportlet_question_123478_3" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234781509883903936" value="293155" disabled="disabled"><div class="answer-options"><p>Ese problema no se puede solucionar con Machine Learning. </p></div></label></div></div></div><div class="question correct questiontype_options questiontype_0"><input type="hidden" name="_execactivity_WAR_liferaylmsportlet_question" value="123479"><div class="questiontext"><p>4. Para la resolución de esta pregunta usaremos el mismo <em>Dataset </em>que creamos en la pregunta 5 del test del módulo 2 usando el servicio que nos presta BigML. Si creamos un detector de asociaciones con él usando la acción 1-click association (siguiendo los pasos mostrados en el vídeo del apartado “Reglas de asociación: Association Rules” de este módulo), ¿aparece alguna relación importante entre los valores de la <em>glucosa </em>y el hecho de tener <em>diabetes</em>?</p></div><div class="content_answer"><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123479_0"><input id="_execactivity_WAR_liferaylmsportlet_question_123479_0" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234791509883903960" checked="checked" value="293156" disabled="disabled"><div class="answer-options"><p>Sí, cuando el valor de la glucosa es mayor que 146 los pacientes son mayoritariamente diabéticos (y a la inversa).</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123479_1"><input id="_execactivity_WAR_liferaylmsportlet_question_123479_1" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234791509883903962" value="293157" disabled="disabled"><div class="answer-options"><p>Sí, cuando el valor de la glucosa es mayor que 132 los pacientes son siempre diabéticos.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123479_2"><input id="_execactivity_WAR_liferaylmsportlet_question_123479_2" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234791509883903964" value="293158" disabled="disabled"><div class="answer-options"><p>No, las relaciones existentes no vinculan la glucosa con el hecho de tener diabetes.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123479_3"><input id="_execactivity_WAR_liferaylmsportlet_question_123479_3" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234791509883903966" value="293159" disabled="disabled"><div class="answer-options"><p>La mayoría de pacientes que tienen más de 132 de glucosa son diabéticos, pero si se mira en el conjunto total de diabéticos, los valores de la glucosa varían mucho y no hay ninguna relación.</p></div></label></div></div></div><div class="question correct questiontype_options questiontype_0"><input type="hidden" name="_execactivity_WAR_liferaylmsportlet_question" value="123480"><div class="questiontext"><p>5. Para la resolución de esta pregunta usaremos el mismo <em>Dataset </em>que creamos en el test 5 del módulo 2 usando el servicio que nos presta BigML. Deberemos crear un detector de anomalías para detectar aquellos datos de nuestro fichero que son errores o casos extremos que no siguen la pauta general. Como sabemos que el campo <em>Fecha de diagnóstico</em> y sus derivados son información administrativa (sin importancia en el aprendizaje) utilizaremos la opción <em>Configure Anomaly </em>para marcar estos campos como información de referencia, de forma que no se usen en el detector de anomalías.</p>
+
+<p style="text-align: center;"><img alt="" src="./Miríada X - evaluacion4_files/3ff013cb-627a-402e-abb1-d9f74d4e1327" style="width: 600px; height: 392px;"></p>
+
+<p>¿Cuáles son los valores de los campos <em>Glucosa </em>y <em>Diabetes </em>en la instancia más anómala? ¿Qué nivel de anomalía se le asigna a esa instancia? ¿Cuáles son los tres atributos que más contribuyen a dicha anomalía?</p></div><div class="content_answer"><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123480_0"><input id="_execactivity_WAR_liferaylmsportlet_question_123480_0" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234801509883903990" value="293160" disabled="disabled"><div class="answer-options"><p>En la instancia más anómala el campo <em>Glucosa </em>vale 189 y el valor del campo <em>Diabetes </em>es <em>Sí</em>. El <em>anomaly score </em>es del 58,58%. Los tres atributos que más importancia tienen al determinar la anomalía son la <em>Insulina</em>, la <em>Diabetes </em>y la <em>Glucosa</em>.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123480_1"><input id="_execactivity_WAR_liferaylmsportlet_question_123480_1" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234801509883903992" value="293161" disabled="disabled"><div class="answer-options"><p>En la instancia más anómala el campo <em>Glucosa </em>vale 165 y el valor del campo <em>Diabetes </em>es <em>No</em>. El <em>anomaly score</em> es del 62,25%. Los tres atributos que más importancia tienen al determinar la anomalía son la <em>Insulina</em>, la <em>Diabetes </em>y la <em>Glucosa</em>.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123480_2"><input id="_execactivity_WAR_liferaylmsportlet_question_123480_2" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234801509883903993" value="293162" disabled="disabled"><div class="answer-options"><p>En la instancia más anómala el campo <em>Glucosa </em>vale 197 y el valor del campo <em>Diabetes </em>es <em>Sí</em>. El <em>anomaly score</em> es del 58,58%. Los tres atributos que más importancia tienen al determinar la anomalía son la <em>Insulina</em>, la <em>Diabetes </em>y la <em>Glucosa</em>.</p></div></label></div><div class="answer "><label for="_execactivity_WAR_liferaylmsportlet_question_123480_3"><input id="_execactivity_WAR_liferaylmsportlet_question_123480_3" type="radio" name="_execactivity_WAR_liferaylmsportlet_question_1234801509883903995" checked="checked" value="293163" disabled="disabled"><div class="answer-options"><p>En la instancia más anómala el campo <em>Glucosa </em>vale 197 y el valor del campo Diabetes es <em>No</em>. El <em>anomaly score</em> es del 62,25%. Los tres atributos que más importancia tienen al determinar la anomalía son el <em>Pedigree diabetes</em>, la <em>Insulina </em>y la <em>Glucosa</em>.</p></div></label></div></div></div>
+				
+			
+
+		
+
+	
+
+
+
+
+
+			
+		
+
+	
+	
+
+					
+				
+			
+			
+		
+	
+	
+
+
+
+	</div>
+
+				</div>
+
+				
+			
+		
+	
+</div>
+	</div>
+
+
+
+
+
+
+	
+	
+
+					
+				
+			
+			
+		
+	
+	
+
+
+
+	</div>
+
+				</div>
+
+				
+			
+		
+	
+
+				
+				
+			
+
+		
+
+	
+
+
+
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_activityNavigator_WAR_liferaylmsportlet_  portlet-static portlet-static-end portlet-borderless activitynavigator-portlet " id="p_p_id_activityNavigator_WAR_liferaylmsportlet_">
+		<span id="p_activityNavigator_WAR_liferaylmsportlet"></span>
+
+		<div class="portlet-body">
+
+
+
+	
+	
+	
+	
+
+		
+
+			
+				
+					
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+			
+
+				
+
+				<div class="portlet-borderless-container" style="">
+					
+
+					
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- vd-48-Fri Mar 24 08:42:55 GMT 2017-->
+
+
+
+
+
+
+
+
+		<div id="modulegreetings">
+	
+			Enhorabuena. Terminaste.
+		</div>		
+	
+						
+							
+						
+						<div id="previusactivity"><a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&amp;p_p_id=activityNavigator_WAR_liferaylmsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-2&amp;p_p_col_pos=3&amp;p_p_col_count=4&amp;p_r_p_564233524_actId=129222&amp;_activityNavigator_WAR_liferaylmsportlet_javax.portlet.action=viewactivity">Actividad anterior</a></div>
+					
+					
+						
+					
+					<div id="nextactivity"><a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&amp;p_p_id=activityNavigator_WAR_liferaylmsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-2&amp;p_p_col_pos=3&amp;p_p_col_count=4&amp;p_r_p_564233524_actId=129226&amp;_activityNavigator_WAR_liferaylmsportlet_javax.portlet.action=viewactivity">Siguiente actividad</a></div>
+				
+<script type="text/javascript">
+function updateActivityNavigation()
+{
+	Liferay.Portlet.refresh('#p_p_id_activityNavigator_WAR_liferaylmsportlet_');
+}
+</script>
+
+	
+	
+
+					
+				
+			
+			
+		
+	
+	
+
+
+
+	</div>
+
+				</div>
+
+				
+			
+		
+	
+
+				
+				
+			
+
+		
+
+	
+
+
+
+
+
+			
+		</div>
+	</div>
+
+
+
+
+
+	
+	
+</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+
+
+
+
+
+
+
+<form action="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&amp;p_p_auth=4GOVBtb2&amp;p_p_id=execactivity_WAR_liferaylmsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_o_p_id=activityViewer_WAR_liferaylmsportlet&amp;p_r_p_564233524_actId=129224&amp;_execactivity_WAR_liferaylmsportlet_latId=50702962&amp;_execactivity_WAR_liferaylmsportlet_javax.portlet.action=correct#" id="hrefFm" method="post" name="hrefFm">
+	<span></span>
+</form>
+			</div>
+</div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-activityResult" style="display: none; z-index: 1002; outline: 0px; position: absolute; height: auto; width: 300px; top: 181px; left: 480.5px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-activityResult">&nbsp;</span><a href="https://miriadax.net/web/introduccion-al-machine-learning-2-edicion-/reto?p_auth=0uCjNVtP&amp;p_p_auth=4GOVBtb2&amp;p_p_id=execactivity_WAR_liferaylmsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_o_p_id=activityViewer_WAR_liferaylmsportlet&amp;p_r_p_564233524_actId=129224&amp;_execactivity_WAR_liferaylmsportlet_latId=50702962&amp;_execactivity_WAR_liferaylmsportlet_javax.portlet.action=correct#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="activityResult" style="width: auto; min-height: 0px; height: 157.2px;" class="ui-dialog-content ui-widget-content" scrolltop="0" scrollleft="0">
+<h1>Test superado</h1>
+<div id="actfeedback"></div>
+<div id="score" style="">
+	<b>Has obtenido un 80% en esta tarea</b>
+</div>
+
+<!-- <a class="button">Ver revisi&oacute;n</a>-->
+<div style="display:none">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="aui-button-holder ">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="aui-button">
+	<span class="aui-button-content">
+		<input class="aui-button-input" id="_execactivity_WAR_liferaylmsportlet_cancelButton" type="button" value="Aceptar" onclick="$(&#39;#activityResult&#39;).dialog(&#39;close&#39;)">
+	</span>
+</span>
+	</div>
+</div>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div></div>
+
+<!-- FOOTER -->
+<footer id="footer" role="contentinfo">
+			<div class="redesfooter">
+			<div class="contenido">
+				<div class="boxLogos">
+					<ul>
+						<li>UNA INICIATIVA DE: </li>
+						<li><a href="http://www.telefonicaeducaciondigital.com/"><img src="./Miríada X - evaluacion4_files/ted.png"></a></li>
+						<!-- <li><a href="http://www.universia.net/"><img src="https://miriadax.net/miriadax-theme/images/custom/footer/universia.png"></a></li> -->
+					</ul>				
+				</div>	
+				<div class="boxRRSS">		
+					<ul>
+						<li>Síguenos en: </li>
+						<li><a href="https://twitter.com/miriadax" target="_blank"><img src="./Miríada X - evaluacion4_files/f_twitter.png"></a></li>
+						<li><a href="https://es-es.facebook.com/MiriadaX" target="_blank"><img src="./Miríada X - evaluacion4_files/f_facebook.png"></a></li>
+						<li><a href="https://plus.google.com/+MiriadaxNet/posts" target="_blank"><img src="./Miríada X - evaluacion4_files/f_google.png"></a></li>
+						<li><a href="https://es.linkedin.com/company/mir-ada-x" target="_blank"><img src="./Miríada X - evaluacion4_files/f_linkedin.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="menufooter">
+			<div class="contenido">
+				<div class="boxApp">
+					<ul>
+						<li><span>DESCARGA NUESTRA APP</span></li>		
+					</ul>		
+					<ul>
+						<li><a href="https://itunes.apple.com/es/app/mir%C3%ADada-x/id1071085815?mt=8"><img src="./Miríada X - evaluacion4_files/icoAppleStore.png"></a></li>
+						<li><a href="https://play.google.com/store/apps/details?id=com.tls.MiriadaXApp&amp;hl=es"><img src="./Miríada X - evaluacion4_files/icoGooglePlay.png"></a></li>
+					</ul>						
+				</div>
+				<div class="boxMenuFooter">
+					<ul class="menufooter1">
+						<li><span>Cursos</span></li>
+						<li><a href="https://miriadax.net/web/guest/cursos">Nuestra oferta</a></li>
+					</ul>	
+
+					<ul class="menufooter1">
+						<li><span>Instituciones</span></li>
+						<li><a href="https://miriadax.net/web/guest/universidades">Partners Educativos</a></li>
+						<li><a href="https://miriadax.net/web/guest/unirse-a-miriada-x">Unirse a MiríadaX</a></li>
+					</ul>
+
+					<ul class="menufooter1">
+						<li><span>Conócenos</span></li>
+						<!-- <li><a href="#">Nuestros n&uacute;meros</a></li>
+						<li><a href="#">Alumno Mx</a></li>
+						<li><a href="#">Profesores Mx</a></li> -->
+						<li><a href="https://miriadax.net/web/guest/nuestra-filosofia">Nuestra filosofía</a></li>
+						<li><a href="https://miriadax.net/web/guest/normas-de-trabajo-en-miriadax">Normas de trabajo en MiríadaX</a></li>
+						<li><a href="https://miriadax.net/web/guest/partners-de-investigacion">Partners de investigación</a></li>
+						<li><a href="https://miriadax.net/web/guest/nuestros-numeros">Nuestros números</a></li>
+					</ul>
+					
+					<ul class="menufooter2">
+						<li><span>Novedades</span></li>
+						<li><a href="https://miriadax.net/web/guest/blog">Blog</a></li>
+						<li><a href="https://miriadax.net/web/guest/eventos">Eventos</a></li>
+						<!-- <li><a href="#">Prensa</a></li>
+						<li><a href="#">Trabaja con nosotros</a></li>
+						<li><a href="#">TECH Mir&iacute;adaX</a></li> -->
+					</ul>
+					
+
+					<ul class="menufooter3">
+						<li><span>Soporte</span></li>
+						<li><a href="https://miriadax.net/web/guest/faq">FAQS</a></li>
+						<li><a href="https://miriadax.net/web/guest/sugerencias">Sugerencias</a></li>
+					</ul>
+			
+					<!-- <ul class="menufooter3">
+						<li><span>Partners</span></li>
+						<li><a href="/web/general-navigation/universidades">Universidades e Instituciones</a></li>
+					</ul>	-->
+				</div>
+			</div>	
+		</div>
+	
+
+
+	<div class="powered-by">
+		<div class="contenido">
+			<ul>
+				<li><span>2012-2017 Miríada X. Todos los derechos reservados.</span></li>
+				<li><a href="https://miriadax.net/web/conocenos/aviso-legal">Aviso legal</a></li>
+				<li> - </li>
+				<li><a href="https://miriadax.net/web/conocenos/politica-de-cookies">Política de cookies</a></li>
+				<li> - </li>
+				<li><a href="https://miriadax.net/web/conocenos/proteccion-de-datos">Política de privacidad</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- FIN CONTENIDO -->
+
+
+<div style="display:none;"></div>
+<script>
+	/* $('#mycarousel').bxSlider({
+	     slideWidth: 280,
+	     minSlides: 2,
+	     maxSlides: 4,
+	     moveSlides: 4,
+	     controls: false,
+	     pager: false,
+	     auto: true
+	 });*/
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+				<script src="./Miríada X - evaluacion4_files/main.js.descarga" type="text/javascript"></script>
+
+	
+
+				<script src="./Miríada X - evaluacion4_files/tree.js.descarga" type="text/javascript"></script>
+
+	
+
+
+
+
+
+	
+
+	
+
+
+
+	
+
+				<link href="./Miríada X - evaluacion4_files/main(3).css" rel="stylesheet" type="text/css">
+
+	
+
+
+	
+
+
+
+	
+
+
+
+	
+
+	
+
+
+
+	
+
+				<script src="./Miríada X - evaluacion4_files/test.js.descarga" type="text/javascript"></script>
+
+	
+
+
+	
+
+
+
+	
+
+				<script src="./Miríada X - evaluacion4_files/main.js(1).descarga" type="text/javascript"></script>
+
+	
+
+				<script src="./Miríada X - evaluacion4_files/main.js(2).descarga" type="text/javascript"></script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+	Liferay.Util.addInputFocus();
+
+	
+		Liferay.Portlet.runtimePortletIds = ['lopdportlet_WAR_lopdhook','82','menunavegacion_WAR_menupersonalizadoportlet','103','generalnav_ISC_WAR_npanav_ISCportlet','execactivity_WAR_liferaylmsportlet'];
+	
+
+	
+
+	
+		
+		
+
+			
+
+			
+		
+	
+
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+		
+
+		
+	
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 0,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_103_',
+						portletId: '103',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3d103\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3d\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d0\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 0,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_ModuleTitle_WAR_liferaylmsportlet_',
+						portletId: 'ModuleTitle_WAR_liferaylmsportlet',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3dModuleTitle_WAR_liferaylmsportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-2\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 3,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_activityNavigator_WAR_liferaylmsportlet_',
+						portletId: 'activityNavigator_WAR_liferaylmsportlet',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3dactivityNavigator_WAR_liferaylmsportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-2\x26p_p_col_pos\x3d3\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 0,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_execactivity_WAR_liferaylmsportlet_',
+						portletId: 'execactivity_WAR_liferaylmsportlet',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3dexecactivity_WAR_liferaylmsportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3d\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d0\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26_execactivity_WAR_liferaylmsportlet_navigate\x3d\x26_execactivity_WAR_liferaylmsportlet_latId\x3d50702962\x26_execactivity_WAR_liferaylmsportlet_improve\x3dfalse\x26p_r_p_564233524_actId\x3d129224\x26_execactivity_WAR_liferaylmsportlet_question_123479\x3d293156\x26_execactivity_WAR_liferaylmsportlet_question_123478\x3d293152\x26_execactivity_WAR_liferaylmsportlet_question_123477\x3d293149\x26_execactivity_WAR_liferaylmsportlet_question_123476\x3d293144\x26_execactivity_WAR_liferaylmsportlet_formDate\x3d1509882729620\x26_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x3dcorrect\x26_execactivity_WAR_liferaylmsportlet_question_123480\x3d293163\x26_execactivity_WAR_liferaylmsportlet_question\x3d123476\x26_execactivity_WAR_liferaylmsportlet_question\x3d123477\x26_execactivity_WAR_liferaylmsportlet_question\x3d123478\x26_execactivity_WAR_liferaylmsportlet_question\x3d123479\x26_execactivity_WAR_liferaylmsportlet_question\x3d123480\x26_execactivity_WAR_liferaylmsportlet_currentQuestionId\x3d0\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 2,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_activityViewer_WAR_liferaylmsportlet_',
+						portletId: 'activityViewer_WAR_liferaylmsportlet',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3dactivityViewer_WAR_liferaylmsportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-2\x26p_p_col_pos\x3d2\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 0,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_lmsactivitieslist_WAR_liferaylmsportlet_',
+						portletId: 'lmsactivitieslist_WAR_liferaylmsportlet',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3dlmsactivitieslist_WAR_liferaylmsportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 1,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_moduleDescription_WAR_liferaylmsportlet_',
+						portletId: 'moduleDescription_WAR_liferaylmsportlet',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3dmoduleDescription_WAR_liferaylmsportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-2\x26p_p_col_pos\x3d1\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 0,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_lopdportlet_WAR_lopdhook_',
+						portletId: 'lopdportlet_WAR_lopdhook',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3dlopdportlet_WAR_lopdhook\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3d\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d0\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 0,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_82_',
+						portletId: '82',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3d82\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3d\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d0\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 0,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_menunavegacion_WAR_menupersonalizadoportlet_',
+						portletId: 'menunavegacion_WAR_menupersonalizadoportlet',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3dmenunavegacion_WAR_menupersonalizadoportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3d\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d0\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 0,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_82_',
+						portletId: '82',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3d82\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3d\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d0\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 0,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_generalnav_ISC_WAR_npanav_ISCportlet_',
+						portletId: 'generalnav_ISC_WAR_npanav_ISCportlet',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3dgeneralnav_ISC_WAR_npanav_ISCportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3d\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d0\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			
+				Liferay.Portlet.onLoad(
+					{
+						canEditTitle: false,
+						columnPos: 0,
+						isStatic: 'end',
+						namespacedId: 'p_p_id_73_INSTANCE_4444_',
+						portletId: '73_INSTANCE_4444',
+						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d85105750\x26p_p_id\x3d73_INSTANCE_4444\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d1\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3d\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d0\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fintroduccion-al-machine-learning-2-edicion-\x252Freto\x253Fp_auth\x253D0uCjNVtP\x2526p_p_auth\x253D4GOVBtb2\x2526p_p_id\x253Dexecactivity_WAR_liferaylmsportlet\x2526p_p_lifecycle\x253D1\x2526p_p_state\x253Dnormal\x2526p_p_mode\x253Dview\x2526p_o_p_id\x253DactivityViewer_WAR_liferaylmsportlet\x2526p_r_p_564233524_actId\x253D129224\x2526_execactivity_WAR_liferaylmsportlet_latId\x253D50702962\x2526_execactivity_WAR_liferaylmsportlet_javax\x2eportlet\x2eaction\x253Dcorrect\x26p_o_p_id\x3dactivityViewer_WAR_liferaylmsportlet'
+					}
+				);
+			AUI().use('aui-base', 'liferay-menu', 'liferay-notice', 'liferay-poller', function(A) {(function() {
+	Liferay.Util.addInputType();
+
+	Liferay.Portlet.ready(
+		function(portletId, node) {
+			Liferay.Util.addInputType(node);
+		}
+	);
+})();(function() {
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 1; i < liferayNotices.length; i++) {
+		new Liferay.Notice(liferayNotices[i]);
+	}
+
+	
+		Liferay.Poller.init(
+			{
+				encryptedUserId: 'RPl9IMypOGuF+gcuC9f5Lw==',
+				supportsComet: false
+			}
+		);
+	
+})();});
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+<script src="./Miríada X - evaluacion4_files/main.js(3).descarga" type="text/javascript"></script>
+
+
+
+	
+
+	
+
+	<script type="text/javascript">
+		// <![CDATA[
+			
+
+			
+		// ]]>
+	</script>
+
+
+
+
+
+
+
+<div id="rememberry__extension__root"></div></body></html>

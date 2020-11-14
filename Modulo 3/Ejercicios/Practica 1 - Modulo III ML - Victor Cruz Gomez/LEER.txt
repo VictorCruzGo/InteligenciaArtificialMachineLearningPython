@@ -1,0 +1,30 @@
+*********************************************************
+*	Nombre: VICTOR CRUZ GOMEZ			*
+*	Curso: Machine Learning - Modulo III		*
+*********************************************************
+
+Los dos ejercicios fueron realizados en SPIDER 4. Usar el mismo IDE o similar.
+
+Configuracion para el 'Ejercicio 1 Final.py'
+--------------------------------------------
+-Indicar la ruta para crear la carpeta 'blog'. Modificar la variable path.
+
+
+Configuracion para el 'Ejercicio 2 Final.py'
+--------------------------------------------
+Stop Word en espanol
+1. Crear una carpeta y dentro copiar el archivo 'spanish.txt'. Luego en el codigo fuente del 'Ejercicio 2 Final.py'
+apunter a la carpeta anteriormente creada. La ruta se encuentra en la variable 'nltk_spanish'
+
+Instalar 
+2. Para el analisis de sentimientos.
+>pip install SentiLeak
+
+NOTA: Para el analisis de sentimiento del 'contenido' se utilizo la libreria Sentileak en espanol. 
+      Despues de la primera ejecucion, el analizador el sentimiento, genera el siguiente error.
+[E090] Extension 'stem' already exists on Token. To overwrite the existing extension, set `force=True` on `Token.set_extension`.
+
+Solucion: Modificar el archivo analizer.py. En la linear 245, adicionar force=True, similar a lo siguiente: Token.set_extension("stem", default="", force=True)
+
+3. Para el grafico nube de palabras.
+>conda install -c conda-forge wordcloud
